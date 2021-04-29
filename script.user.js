@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Pendoria Flipper Embargo
 // @namespace http://pendoria.net/
-// @version 1.0
+// @version 1.0.1
 // @author Puls3
 // @include /^https?:\/\/(?:.+\.)?pendoria\.net\/?(?:.+)?$/
 // @homepage https://github.com/xPuls3/Pendoria-Flipper-Embargo
@@ -49,7 +49,7 @@ function initiate() {
 
 function newAjaxPost(...args) {
 
-    if (!args[0].startsWith("/market/")) originalAjaxPost(...args);
+    if (!args[0].startsWith("/market/")) return originalAjaxPost(...args);
 
     originalAjaxPost(args[0], (data) => {
 
