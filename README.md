@@ -1,4 +1,4 @@
-# Pendoria-Flipper-Embargo
+# Pendoria Flipper Embargo
 Highlights the names of known flippers.
 
 ## Downloads
