@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Pendoria Flipper Embargo
 // @namespace http://pendoria.net/
-// @version 1.0.1
+// @version 1.0.2
 // @author Puls3
 // @include /^https?:\/\/(?:.+\.)?pendoria\.net\/?(?:.+)?$/
 // @homepage https://github.com/xPuls3/Pendoria-Flipper-Embargo
@@ -50,10 +50,12 @@ function initiate() {
 function newAjaxPost(...args) {
 
     if (!args[0].startsWith("/market/")) return originalAjaxPost(...args);
+    if (!args[0].includes("/display/")) return originalAjaxPost(...args);
 
     originalAjaxPost(args[0], (data) => {
 
         if (!(typeof data === "string")) return args[1](data);
+        if (!args[0].includes("/display/")) return args[1](data);
 
         let newData = data;
 
@@ -67,6 +69,6 @@ function newAjaxPost(...args) {
 
         }
 
-    })
+    }, (args[2] || undefined))
 
 }
