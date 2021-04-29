@@ -11,7 +11,7 @@
 // @icon https://raw.githubusercontent.com/xPuls3/Pendorian-Elite-UI/master/favicon.ico
 // @grant none
 // @run-at document-start
-// @description Changes a large portion of the text and UI to 'Elite' blue and makes small changes to the UI.
+// @description Highlights the names of known flippers.
 // ==/UserScript==
 
 // Pendoria Flipper Embargo is only officially distributed on GitHub!
