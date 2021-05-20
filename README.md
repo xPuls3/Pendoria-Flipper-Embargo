@@ -10,7 +10,7 @@ Highlights the names of known flippers.
 * Violentmonkey will display a "confirm Installation" button, confirm the installation.
 * Refresh Pendoria.
 
-### Compatibility
+## Compatibility
 * Compatible with Firefox & Chrome.
 * Compatible with Violentmonkey v2.12.7.
 
