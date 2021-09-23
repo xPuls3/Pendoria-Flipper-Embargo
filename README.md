@@ -1,6 +1,8 @@
 # Pendoria Flipper Embargo
 Highlights the names of known flippers.
 
+Feel free to contribute to the [flipper registry](https://github.com/xPuls3/pendoria-flipper-registry/blob/main/list.json).
+
 ## Downloads
 [Click To Download](https://github.com/xPuls3/Pendoria-Flipper-Embargo/raw/master/script.user.js)
 
